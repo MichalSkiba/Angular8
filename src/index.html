@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pl" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>eBook - eLib</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="image/logo.jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-fw fa-wrench"></i> Services</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Clients</a>
+  <a href="app/app.component.html"><i class="fa fa-fw fa-envelope"></i> Kontact</a>
+</div>
+<div id="main">
+
+  <div class="image-container">
+  </div>
+  <div class="text">eBook - eLib<br>eBooki na strony</div>
+
+  <div class="column" >
+    <app-root></app-root>
+
+<!--    <div class="col-xl-2">-->
+<!--&lt;!&ndash;      <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;        Ilośc sztuk&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="badge badge-primary badge-pill">0</span>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;        Do zapłaty&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="badge badge-primary badge-pill">0 PLN</span>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">&ndash;&gt;-->
+<!--&lt;!&ndash;        Do Kasy&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="badge badge-primary badge-pill">GO ! </span>&ndash;&gt;-->
+<!--&lt;!&ndash;      </li>&ndash;&gt;-->
+<!--    </div>-->
+<!--    <div class="col-xl-9">-->
+
+<!--    </div>-->
+  </div>
+
+  <div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+  </div>
+
+</div>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable div").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+
+    }
+
+</script>
+

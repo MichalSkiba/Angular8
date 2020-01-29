@@ -1,0 +1,25 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {RouterModule, Routes} from '@angular/router';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {HomeComponent} from './home/home.component';
+import {MainPageComponent} from './main-page/main-page.component';
+import {ProductComponent} from './product/product.component';
+
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'mainpage', component: MainPageComponent },
+  { path: 'product/:id', component: ProductComponent },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule, RouterModule.forRoot(routes, {useHash: true})
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

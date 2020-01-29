@@ -1,0 +1,15 @@
+
+<img  *ngIf="book$.url === null; else URL" src= "https://previews.123rf.com/images/yupiramos/yupiramos1502/yupiramos150209997/37016834-ebook-icon-design-vector-illustration-eps10-graphic.jpg" alt="Denim Jeans" style="width:100%">
+<ng-template #URL>
+  <img  *ngIf="book$.url2 === null; else noURL" src= "{{book$.url}}" alt="Denim Jeans" style="width:100%">
+</ng-template>
+<ng-template #noURL>
+  <img   src= "{{book$.url}},{{book$.url2}}" alt="Denim Jeans" style="width:100%">
+</ng-template>
+<h4>{{book$.tytul}}</h4>
+<p class="price">{{book$.cena}} PLN</p>
+<p>{{book$.autor}}</p>
+<p><button>Add to Cart</button></p>
+
+<a routerLink="/"><button (click)="onExitChange()" l>Home</button></a>
+
