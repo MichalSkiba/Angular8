@@ -7,7 +7,7 @@ import {Book} from './app.component';
   providedIn: 'root'
 })
 export class BooksService {
-  apuURL = 'http://192.168.10.155:8080/api';
+  apuURL = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) { }
 

@@ -50,6 +50,10 @@
   opacity: 0.7;
 }
 
+.container{
+  position: center;
+}
+
 a.custom-card,
 a.custom-card:hover {
   color: inherit;
@@ -58,6 +62,5 @@ a.custom-card:hover {
 
 input{
   width: 500px;
-  position: center;
-  margin-left: 10cm;
+/*  margin-left: 10cm;*/
 }

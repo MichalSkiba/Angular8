@@ -14,6 +14,13 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+import {authInterceptorProviders} from './_helpers/auth.interceptor';
 
 
 
@@ -24,13 +31,19 @@ import { CartComponent } from './cart/cart.component';
     MainPageComponent,
     HomeComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule,
     NgxPaginationModule, Ng2SearchPipeModule, AppRoutingModule
   ],
-  providers: [BooksService],
+  providers: [BooksService, authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
