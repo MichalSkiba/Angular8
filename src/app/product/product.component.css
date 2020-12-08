@@ -6,3 +6,11 @@ img{
   width:768px;
   height:1024px;
 }
+
+.page-wrap {
+  min-height: 100vh;
+  background-image: url("../../image/ebook2.JPG");
+}
+
+a {text-decoration: none;}
+a:hover {text-decoration: none;}

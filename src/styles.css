@@ -1,5 +1,5 @@
 .image-container {
-  background-image: url("image/ksiazki.jpg"); /* The image used - important! */
+  background-image: url("image/ebook3.JPG"); /* The image used - important! */
   filter: blur(5px);
   -webkit-filter: blur(7px);
   background-size: cover;
@@ -49,6 +49,7 @@
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #f1f1f1;
+  text-decoration: none;
 }
 
 /* Position and style the close button (top right corner) */
@@ -103,4 +104,7 @@ body  {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
 

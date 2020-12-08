@@ -1,5 +1,5 @@
 import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import {BooksService} from '../books.service';
+import {BooksService} from '../_services/books.service';
 import {ActivatedRoute} from '@angular/router';
 import {AppComponent, Book} from '../app.component';
 import {Observable, Subscription} from 'rxjs';

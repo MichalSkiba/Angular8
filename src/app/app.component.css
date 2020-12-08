@@ -4,4 +4,6 @@ body  {
   background-attachment: fixed;
 }
 
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
 

@@ -1,0 +1,20 @@
+.container {
+  /*height: 1000px; !* Some height *!*/
+  /*height: 100%;*/
+  align-content: center;
+}
+
+.page-wrap {
+  min-height: 100vh;
+  background-image: url("../../image/Login.JPG");
+}
+
+label{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+a {text-decoration: none;}
+a:hover {text-decoration: none;}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {Book} from '../app.component';
-import {BooksService} from '../books.service';
+import {BooksService} from '../_services/books.service';
 import {UserService} from '../_services/user.service';
 
 @Component({

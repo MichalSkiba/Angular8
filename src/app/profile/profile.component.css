@@ -5,3 +5,6 @@ p{
 ul{
   color: #ff0000;
 }
+
+a {text-decoration: none;}
+a:hover {text-decoration: none;}

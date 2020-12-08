@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Book} from './app.component';
+import {Book} from '../app.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BooksService {
-  apuURL = 'http://localhost:8080/api';
+  apuURL = 'http://192.168.10.155:8080/api';
 
   constructor(private http: HttpClient) { }
 

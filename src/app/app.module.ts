@@ -6,7 +6,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
-import {BooksService} from './books.service';
+import {BooksService} from './_services/books.service';
 import {AppRoutingModule} from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
